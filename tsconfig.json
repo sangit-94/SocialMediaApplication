@@ -7,9 +7,14 @@
       "outDir": "./dist",
       "rootDir": "./src",
       "resolveJsonModule": true,
-      "skipLibCheck": true
+      "skipLibCheck": true,
+      "baseUrl": "./src",               // Base directory for path mapping
+      "paths": {
+        "*": ["*"]                  // Alias '~' to the 'src' directory
+      }
     },
-    "include": ["src"],
-    "exclude": ["node_modules"]
+    "include": ["src/**/*"],   // Include all .ts files in the src directory
+    "exclude": ["node_modules", "dist"]  // Exclude node_modules and dist directories
   }
+  
   

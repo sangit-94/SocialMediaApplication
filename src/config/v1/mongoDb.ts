@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import { IDatabase } from '../interfaces/database';
+import { IDatabase } from 'interfaces/v1/database';
 import dotenv from 'dotenv';
 
 dotenv.config();

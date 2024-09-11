@@ -1,5 +1,5 @@
 import MongoDB from './mongoDb';
-import { IDatabase } from '../interfaces/database';
+import { IDatabase } from 'interfaces/v1/database';
 
 class DatabaseFactory {
   static createDatabase(dbType: string): IDatabase {

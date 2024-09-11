@@ -2,11 +2,12 @@
   "name": "socialmediaapplication",
   "version": "1.0.0",
   "description": "Facebook",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "build": "webpack --config webpack.config.js",
     "start": "node dist/server.js",
-    "dev": "nodemon src/server.ts",
-    "build": "tsc"
+    "dev": "webpack --config webpack.config.js --mode development --watch",
+    "test": "node test.js"
   },
   "keywords": [],
   "author": "Sandeep Yadav",
@@ -25,6 +26,10 @@
     "@types/jsonwebtoken": "^9.0.6",
     "@types/node": "^22.5.1",
     "nodemon": "^3.1.4",
-    "typescript": "^5.5.4"
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.4",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-node-externals": "^3.0.0"
   }
 }

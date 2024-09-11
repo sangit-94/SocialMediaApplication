@@ -1,0 +1,18 @@
+###
+POST http://localhost:3001/api/user-service/v1/register
+Content-Type: application/json
+
+{
+    "name":"Sandeep",
+    "email":"iamsandeep344@gmail.com",
+    "password":"xyzabc12@"
+}
+
+###
+POST http://localhost:3001/api/user-service/v1/login
+Content-Type: application/json
+
+{
+    "email":"iamsandeep344@gmail.com",
+    "password":"xyzabc12@"
+}
